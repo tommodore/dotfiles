@@ -1,0 +1,4 @@
+# Core
+[submodule ".vim/bundle/pathogen"]
+        path = .vim/bundle/vim-pathogen
+        url = https://github.com/tpope/vim-pathogen.git
