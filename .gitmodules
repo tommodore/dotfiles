@@ -11,3 +11,6 @@
 [submodule ".vim/bundle/vim-syntastic"]
         path = .vim/bundle/vim-syntastic
         url = https://github.com/scrooloose/syntastic.git
+[submodule ".vim/bundle/vim-crtlp"]
+        path = .vim/bundle/vim-ctrlp
+        url = https://github.com/kien/ctrlp.vim.git
