@@ -12,8 +12,8 @@ filetype plugin indent on
 color elflord
 
 " Add line numbers
-set number
-set ruler
+"set number
+"set ruler
 
 " Set encoding
 set encoding=utf-8
