@@ -2,3 +2,9 @@
 [submodule ".vim/bundle/pathogen"]
         path = .vim/bundle/vim-pathogen
         url = https://github.com/tpope/vim-pathogen.git
+[submodule ".vim/bundle/vim-puppet"]
+        path = .vim/bundle/vim-puppet
+        url = https://github.com/rodjek/vim-puppet.git
+[submodule ".vim/bundle/vim-tabular"]
+        path = .vim/bundle/vim-tabular
+        url = https://github.com/godlygeek/tabular.git
