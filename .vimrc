@@ -9,7 +9,7 @@ syntax on
 filetype plugin indent on
 
 " Colorscheme
-color elflord
+color smyck
 
 " Add line numbers
 "set number
