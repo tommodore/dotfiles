@@ -5,6 +5,7 @@ inspired by https://github.com/hukl/dotfiles
 
 
 Dotfiles for various configurations in the home directory
+
 Should work in various Linux distributions and MacOSX
 
 ## Vim
