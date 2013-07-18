@@ -40,6 +40,10 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
+" disable automatic comment insertion in general
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+
 " Search related settings
 set incsearch
 set hlsearch
