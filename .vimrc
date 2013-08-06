@@ -9,11 +9,11 @@ syntax on
 filetype plugin indent on
 
 " Colorscheme
-color smyck
+colorscheme smyck
 
 " Add line numbers
-"set number
-"set ruler
+set number
+set ruler
 
 " Set encoding
 set encoding=utf-8
@@ -45,7 +45,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 
 " Search related settings
+" Start searching when you type the first character of the search string
 set incsearch
+" Any search highlights the string matched by the search.
 set hlsearch
 
 " Map Ctrl+l to clear highlighted searches
@@ -76,7 +78,7 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 " disable folding in markdown module
-let g:vim_markdown_folding_disabled=1
+"let g:vim_markdown_folding_disabled=1
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
