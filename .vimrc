@@ -77,6 +77,9 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
+" add go syntax highlighting
+au BufRead,BufNewFile *.go set ft=go
+
 " disable folding in markdown module
 "let g:vim_markdown_folding_disabled=1
 
