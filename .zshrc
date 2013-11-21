@@ -6,3 +6,5 @@ export ZSH=~/.zsh
 # # Load and run compinit
  autoload -U compinit
  compinit -i
+
+fpath=(/usr/local/share/zsh-completions $fpath)
