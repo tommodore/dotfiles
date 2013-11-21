@@ -7,4 +7,5 @@ export ZSH=~/.zsh
  autoload -U compinit
  compinit -i
 
+# zsh completion for macosx
 fpath=(/usr/local/share/zsh-completions $fpath)
