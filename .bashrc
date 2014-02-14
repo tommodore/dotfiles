@@ -9,6 +9,4 @@ if [ -f ~/dotfiles/.git-completion.bash ]; then
 fi
 
 # Load in the git branch prompt script.
-source ~/dotfiles/.git-prompt.sh
-
-PS1="\[$GREEN\]\u\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\$ """
+source ~/dotfiles/bash-git-prompt/gitprompt.sh
