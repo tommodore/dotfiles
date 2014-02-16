@@ -4,9 +4,12 @@ dotfiles
 inspired by https://github.com/hukl/dotfiles
 
 
-Dotfiles for various configurations in the home directory
+Dotfiles for git|bash|vim configurations in the home directory
 
 Should work for various Linux distributions and MacOSX
 
-## Vim
-run ```git submodule init && git submodule update``` before starting vim
+## Usage
+
+run ```git submodule init && git submodule update```
+
+run ```makesymlinks.sh```
