@@ -9,6 +9,7 @@ syntax on
 filetype plugin indent on
 
 " Colorscheme
+" colorscheme github
 colorscheme smyck
 
 " Add line numbers
@@ -91,3 +92,6 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.eunit$',
   \ 'file': '\.exe$\|\.so$\|\.dll\|\.beam$\|\.DS_Store$'
   \ }
+
+" GIST Open Browser after Gist
+let g:gist_open_browser_after_post = 1
