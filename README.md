@@ -4,7 +4,7 @@ dotfiles
 inspired by https://github.com/hukl/dotfiles
 
 
-Dotfiles for git|bash|vim configurations in the home directory
+Dotfiles for git|bash|zsh|vim configurations in the home directory
 
 Should work for various Linux distributions and MacOSX
 
