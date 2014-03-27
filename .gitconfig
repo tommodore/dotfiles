@@ -1,0 +1,78 @@
+[user]
+	name = Thomas Kräuter
+	email = kraeutert@gmail.com
+[credential]
+	helper = cache
+[github]
+	user = tommodore
+	email = kraeutert@gmail.com
+[push]
+  default = upstream
+[pull]
+  default = current
+[diff]
+  memonicprefix = true
+[branch]
+  autosetuprebase = always
+[apply]
+  whitespace = nowarn
+[rerere]
+  enabled = true
+[alias]
+  # Basic Shortcuts
+  cp = cherry-pick
+  st = status -s
+  cl = clone
+  ci = commit
+  co = checkout
+  br = branch
+  diff = diff --word-diff
+  dc = diff --cached
+  # Reset Commands
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
+  # Stash operations
+  sl = stash list
+  sa = stash apply
+  ss = stash save
+  # List commits in short form
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  # List commits showing changed files
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  # List with no colors
+  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+  # List oneline commits showing dates
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  # List oneline commits showing relative dates
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  # short git log
+  le = log --oneline --decorate
+  # Show content (full diff) of a commit given a revision
+  dr  = "!f() { git diff "$1"^.."$1"; }; f"
+  lc  = "!f() { git ll "$1"^.."$1"; }; f"
+  diffr  = "!f() { git diff "$1"^.."$1"; }; f"
+  # Show modified files in last commit
+  dl = "!git ll -1"
+  # Show a diff last commit
+  dlc = diff --cached HEAD^
+  # Show the history of a file, with diffs
+  filelog = log -u
+  fl = log -u
+  # Show the last tag
+  lasttag = describe --tags --abbrev=0
+  lt = describe --tags --abbrev=0
+  # List all your Aliases
+  la = "!git config -l | grep alias | cut -c 7-"
+  # Search/grep your entire codebase for a string
+  grep = grep -Ii
+  gr = grep -Ii
+  # Find a file path in codebase
+  f = "!git ls-files | grep -i"
+  # Git-svn shortcuts
+  svnr = svn rebase
+  svnd = svn dcommit
+  svnl = svn log --oneline --show-commit
