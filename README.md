@@ -1,8 +1,7 @@
 dotfiles
 ========
 
-inspired by https://github.com/hukl/dotfiles
-
+Make your home more comfortable
 
 Dotfiles for git|bash|zsh|vim configurations in the home directory
 
