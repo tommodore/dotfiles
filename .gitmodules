@@ -47,3 +47,6 @@
 [submodule ".vim/bundle/vim-bundler"]
 	path = .vim/bundle/vim-bundler
 	url = git://github.com/tpope/vim-bundler.git
+[submodule "bash/bash-git-prompt"]
+	path = bash/bash-git-prompt
+	url = https://github.com/magicmonty/bash-git-prompt.git
