@@ -30,7 +30,7 @@
 	path = .vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "bash-git-prompt"]
-	path = bash-git-prompt
+	path = bash/bash-git-prompt
 	url = https://github.com/magicmonty/bash-git-prompt.git
 [submodule ".vim/bundle/webapi-vim"]
 	path = .vim/bundle/webapi-vim
@@ -50,6 +50,3 @@
 [submodule ".vim/bundle/vim-bundler"]
 	path = .vim/bundle/vim-bundler
 	url = git://github.com/tpope/vim-bundler.git
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = git://github.com/robbyrussell/oh-my-zsh.git
