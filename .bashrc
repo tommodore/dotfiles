@@ -10,5 +10,22 @@ if [ -f ~/dotfiles/bash/bash-git-prompt/gitprompt.sh ]; then
   . ~/dotfiles/bash/bash-git-prompt/gitprompt.sh
 fi
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/heroku/bin:$PATH
+
+# PATH
+pathdirs=(
+  /usr/local/heroku/bin
+  /opt/local/bin
+  /opt/local/sbin
+  /usr/local/bin
+  /usr/local/sbin
+  ~/bin
+)
+for dir in $pathdirs; do
+    if [ -d $dir ]; then
+        PATH=$dir:$PATH
+    fi
+done
+export PATH
+
+#PS1 Prompt
 export GIT_PS1_SHOWDIRTYSTATE=1

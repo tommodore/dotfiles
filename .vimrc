@@ -100,3 +100,6 @@ let g:ctrlp_custom_ignore = {
 
 " GIST Open Browser after Gist
 let g:gist_open_browser_after_post = 1
+
+" gitgutter realtime fix
+let g:gitgutter_realtime = 1
