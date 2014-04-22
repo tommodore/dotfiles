@@ -3,9 +3,6 @@ export ZSH=~/dotfiles/zsh
 # Load all of the config files in that end in .zsh
 for config_file ($ZSH/lib/*.zsh) source $config_file
 
-# RVM ZSH
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 # PATH
 pathdirs=(
   /usr/local/heroku/bin
@@ -25,4 +22,3 @@ export PATH
 # Load and run compinit
 autoload -U compinit
 compinit -i
-
