@@ -1,11 +1,11 @@
 [user]
-	name = Thomas Kräuter
-	email = kraeutert@gmail.com
+  name = Thomas Kräuter
+  email = kraeutert@gmail.com
 [credential]
-	helper = cache
+  helper = cache
 [github]
-	user = tommodore
-	email = kraeutert@gmail.com
+  user = tommodore
+  email = kraeutert@gmail.com
 [push]
   default = current
 [pull]
