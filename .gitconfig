@@ -7,11 +7,13 @@
 	user = tommodore
 	email = kraeutert@gmail.com
 [push]
-  default = upstream
+  default = current
 [pull]
   default = current
 [diff]
   memonicprefix = true
+[merge]
+  ff = no
 [branch]
   autosetuprebase = always
 [apply]
