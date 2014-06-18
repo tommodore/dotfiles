@@ -6,6 +6,9 @@ fi
 if [ -f ~/dotfiles/bash/.git-completion.bash ]; then
   . ~/dotfiles/bash/.git-completion.bash
 fi
+
+# Git Prompt
+__GIT_PROMPT_DIR=~/dotfiles/bash/bash-git-prompt
 if [ -f ~/dotfiles/bash/bash-git-prompt/gitprompt.sh ]; then
   . ~/dotfiles/bash/bash-git-prompt/gitprompt.sh
 fi
@@ -29,4 +32,5 @@ export PATH
 
 #PS1 Prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
