@@ -42,10 +42,8 @@ endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " disable automatic comment insertion in general
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-
-" Search related settings
 " Start searching when you type the first character of the search string
 set incsearch
 " Any search highlights the string matched by the search.
@@ -53,6 +51,9 @@ set hlsearch
 
 " Map Ctrl+l to clear highlighted searches
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" Disable code folding
+set nofoldenable
 
 " Directories for swp files
 set backupdir=~/.vimbackup
@@ -64,13 +65,16 @@ au FileType make set noexpandtab
 " Erlang uses 4 spaces
 au FileType erlang set softtabstop=4 tabstop=4 shiftwidth=4
 
-" Ruby completion
+" Ruby completion vim-ruby
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+
+" md, markdown, and mk are markdown and define buffer-local preview
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
@@ -80,11 +84,8 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
-" add go syntax highlighting
-au BufRead,BufNewFile *.go set ft=go
-
 " disable folding in markdown module
-"let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_folding_disabled=1
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -100,3 +101,11 @@ let g:gist_open_browser_after_post = 1
 
 " gitgutter realtime fix
 let g:gitgutter_realtime = 1
+
+" SYNTASTIC
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_enable_highlighting=1
+let g:syntastic_echo_current_error=1
