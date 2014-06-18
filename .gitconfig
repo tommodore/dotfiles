@@ -12,8 +12,6 @@
   default = current
 [diff]
   memonicprefix = true
-[merge]
-  ff = no
 [branch]
   autosetuprebase = always
 [apply]
