@@ -73,9 +73,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 
-" md, markdown, and mk are markdown and define buffer-local preview
-au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
-
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
 
@@ -83,9 +80,6 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
-
-" disable folding in markdown module
-let g:vim_markdown_folding_disabled=1
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
