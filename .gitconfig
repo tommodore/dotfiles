@@ -28,6 +28,7 @@
   br = branch
   diff = diff --word-diff
   dc = diff --cached
+  ds = diff --stat
   # Reset Commands
   r = reset
   r1 = reset HEAD^
