@@ -5,7 +5,7 @@ Make your home more comfortable
 
 Dotfiles for git|bash|zsh|vim|tmux configurations in the home directory
 
-Work for various Linux distributions and MacOSX
+Works for various Linux distributions and MacOSX
 
 
 ## Usage
