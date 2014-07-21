@@ -6,13 +6,15 @@
 
 ########## Variables
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
+dir="~/dotfiles"                  # dotfiles directory
+olddir="~/dotfiles_old"           # old dotfiles backup directory
+vimbackupdir="~/.vimbackup"
 # list of files/folders to symlink in homedir
 files="bashrc zlogin zshrc vimrc vim gitconfig tmux.conf gemrc"
 
 ##########
 
+mkdir -p $vimbackupdir            # create vim backup dir
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
 mkdir -p $olddir
