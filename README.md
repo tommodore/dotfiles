@@ -16,6 +16,9 @@ run ```makesymlinks.sh```
 
 ## Thanks to
 https://github.com/hukl/dotfiles
+
 https://github.com/olivierverdier/zsh-git-prompt
+
 https://github.com/sindresorhus/pure
+
 https://github.com/magicmonty/bash-git-prompt.git
