@@ -7,10 +7,15 @@ Dotfiles for git|bash|zsh|vim|tmux configurations in the home directory
 
 Work for various Linux distributions and MacOSX
 
-Inspired by https://github.com/hukl/dotfiles
 
 ## Usage
 
 run ```git submodule init && git submodule update```
 
 run ```makesymlinks.sh```
+
+## Thanks to
+https://github.com/hukl/dotfiles
+https://github.com/olivierverdier/zsh-git-prompt
+https://github.com/sindresorhus/pure
+https://github.com/magicmonty/bash-git-prompt.git
