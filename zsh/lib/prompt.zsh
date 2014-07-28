@@ -1,3 +1,3 @@
 autoload -U promptinit && promptinit
 
-# prompt pure
+PURE_GIT_UNTRACKED_DIRTY=1
