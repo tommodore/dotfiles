@@ -13,13 +13,13 @@ Usage
 
 ### Initial setup
 
-run ```makesymlinks.sh```
+Run ```makesymlinks.sh```
 
 ### Update Vim Plugins
 
-Launch `vim` and run `:PluginInstall`
+Launch `vim` and run `:PluginInstall!`
 
-To install from command line: `vim +PluginInstall! +qall`
+To install or update from command line: `vim +PluginInstall! +qall`
 
 
 Thanks to
