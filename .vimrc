@@ -78,8 +78,6 @@ set directory=~/.vimbackup
 au FileType make set noexpandtab
 " Erlang uses 4 spaces
 au FileType erlang set softtabstop=4 tabstop=4 shiftwidth=4
-" Puppet set Filetype
-au BufNewFile,BufRead *.pp set filetype=ruby
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 " Add json syntax highlighting
