@@ -25,6 +25,13 @@ echo -n "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
+# Updates git submodules
+echo -n "Updating git submodules"
+git submodule init && git submodule update
+echo -n "Installing and updating vim plugins"
+vim +PluginInstall! +qall
+echo -n "done
+
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
