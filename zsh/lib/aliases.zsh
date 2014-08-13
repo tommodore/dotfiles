@@ -1,3 +1,15 @@
 alias ll='ls -la'
 alias lh='ls -lah'
 alias ...='cd ../..'
+# homebrew
+alias brewc='brew cleanup'
+alias brewC='brew cleanup --force'
+alias brewi='brew install'
+alias brewl='brew list'
+alias brews='brew search'
+alias brewu='brew upgrade'
+alias brewU='brew update && brew upgrade'
+alias brewx='brew remove'
+# tmux
+alias tmuxa='tmux attach-session'
+alias tmuxl='tmux list-sessions'

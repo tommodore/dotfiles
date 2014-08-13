@@ -1,16 +1,44 @@
-set nocompatible
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Initialize Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+""" Vundle
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+" Plugins
+Plugin 'mattn/webapi-vim'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-fugitive'
+Plugin 'rodjek/vim-puppet'
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'mattn/gist-vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'ervandew/supertab'
+Plugin 'plasticboy/vim-markdown'
+" Colors
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'croaky/vim-colors-github'
+Plugin 'sickill/vim-monokai'
+Plugin 'vim-scripts/twilight256.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+
+""" End Vundle
 
 " Enable syntax highlighting
 syntax on
-filetype plugin indent on
 
 " Colorscheme
-" colorscheme github
-colorscheme smyck
+colorscheme monokai
 
 " Add line numbers
 set number
@@ -42,7 +70,7 @@ endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " disable automatic comment insertion in general
-" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Start searching when you type the first character of the search string
 set incsearch
@@ -103,3 +131,4 @@ let g:gitgutter_realtime = 1
 "let g:syntastic_auto_loc_list=1
 "let g:syntastic_enable_highlighting=1
 "let g:syntastic_echo_current_error=1
+
