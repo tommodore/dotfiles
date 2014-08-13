@@ -8,22 +8,23 @@ Dotfiles for git|bash|zsh|vim|tmux configurations in the home directory
 Works for various Linux distributions and MacOSX
 
 
-## Usage
+Usage
+-----
 
 ### Initial setup
 
 run ```makesymlinks.sh```
 
-### Vim
-
-Install Plugins:
+### Update Vim Plugins
 
 Launch `vim` and run `:PluginInstall`
 
-To install from command line: `vim +PluginInstall +qall`
+To install from command line: `vim +PluginInstall! +qall`
 
 
-## Thanks to
+Thanks to
+---------
+
 https://github.com/hukl/dotfiles
 
 https://github.com/olivierverdier/zsh-git-prompt
