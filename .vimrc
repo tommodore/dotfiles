@@ -78,19 +78,20 @@ set directory=~/.vimbackup
 au FileType make set noexpandtab
 " Erlang uses 4 spaces
 au FileType erlang set softtabstop=4 tabstop=4 shiftwidth=4
-" Ruby completion vim-ruby
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+" Puppet set Filetype
+au BufNewFile,BufRead *.pp set filetype=ruby
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 " Add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
-
 au BufRead,BufNewFile *.txt call s:setupWrapping()
-
 " Make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+
+" Ruby completion vim-ruby
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
