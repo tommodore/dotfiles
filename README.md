@@ -13,6 +13,9 @@ Usage
 
 ### Initial setup
 
+```cd ~```
+```git clone https://github.com/tommodore/dotfiles.git```
+
 Run ```makesymlinks.sh```
 
 ### Update Vim Plugins
