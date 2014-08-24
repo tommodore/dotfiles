@@ -6,9 +6,9 @@
 
 ########## Variables
 
-dir="~/dotfiles"                  # dotfiles directory
-olddir="~/dotfiles_old"           # old dotfiles backup directory
-vimbackupdir="~/.vimbackup"
+dir=~/dotfiles                  # dotfiles directory
+olddir=~/dotfiles_old           # old dotfiles backup directory
+vimbackupdir=~/.vimbackup
 # list of files/folders to symlink in homedir
 files="bashrc zlogin zshrc vimrc vim gitconfig tmux.conf gemrc"
 
