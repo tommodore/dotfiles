@@ -2,7 +2,7 @@
   name = Thomas Kräuter
   email = kraeutert@gmail.com
 [credential]
-  helper = cache
+  helper = cache --timeout=84400
 [github]
   user = tommodore
   email = kraeutert@gmail.com
