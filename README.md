@@ -14,7 +14,7 @@ Run this:
 ```sh
 git clone --recursive https://github.com/tommodore/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-script/bootstrap.sh
+script/bootstrap
 ```
 
 This will:
@@ -38,7 +38,7 @@ use, and build on what you do use.
 
 ## components
 
-There's a few special files in the hierarchy.
+There are a few special files in the hierarchy.
 
 - **bin/**: Anything in `bin/` will get added to your `$PATH` and be made
   available everywhere.
