@@ -1,11 +1,11 @@
 [user]
-  name = Thomas Kräuter
-  email = kraeutert@gmail.com
+  name = AUTHORNAME
+  email = AUTHOREMAIL
 [credential]
-  helper = cache --timeout=84400
+  helper = GIT_CREDENTIAL_HELPER
 [github]
-  user = tommodore
-  email = kraeutert@gmail.com
+  user = GITHUBNAME
+  email = GITHUBEMAIL
 [push]
   default = current
 [pull]
@@ -91,7 +91,6 @@
   pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
-
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
