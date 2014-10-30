@@ -2,3 +2,5 @@ vim/.netrwhist
 vim/bundle/*
 vim/bundle/.vundle
 !vim/bundle/Vundle.vim
+
+git/gitconfig.symlink
