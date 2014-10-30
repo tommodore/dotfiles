@@ -40,8 +40,4 @@ do
     source $file
   done
 
-  unset config_files
-
-# Load all of the config files in that end in .zsh
-for config_file ($ZSH/lib/*.zsh) source $config_file
-
+unset config_files
