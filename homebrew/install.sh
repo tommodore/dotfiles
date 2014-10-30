@@ -6,14 +6,16 @@
 # using Homebrew.
 
 # Check for Homebrew
-if test ! $(which brew)
-then
-  echo "  Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
+if [ $(uname -s) = 'Darwin' ]
+  then
+    if test ! $(which brew)
+    then
+      echo "  Installing Homebrew for you."
+      ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
+    fi
+  # Install homebrew packages
+  brew install grc coreutils spark
 fi
-
-# Install homebrew packages
-brew install grc coreutils spark
 
 exit 0
 
