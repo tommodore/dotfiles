@@ -3,7 +3,7 @@ filetype off                  " required
 
 """ Vundle
 " Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.dotfiles/vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Let Vundle manage Vundle, required
