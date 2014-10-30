@@ -1,7 +1,4 @@
 # Submodules
-[submodule "bash/bash-git-prompt"]
-  path = bash/bash-git-prompt
-  url = https://github.com/magicmonty/bash-git-prompt.git
 [submodule "vim/Vundle.vim"]
   path = vim/Vundle.vim
   url = https://github.com/gmarik/Vundle.vim.git
