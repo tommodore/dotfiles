@@ -20,8 +20,8 @@ script/bootstrap.sh
 This will:
 * symlinks the appropriate files in `.dotfiles` to your home directory
 * loads vim Plugin Manager Vundle as a submodule
-* Install or update Vundle plugins configured in `.dofiles/vim/vimrc.symlink`
-* Installs homebrew - if you're on a mac
+* installs or update Vundle plugins configured in `.dofiles/vim/vimrc.symlink`
+* installs homebrew - if you're on a mac
 
 ### Update Vim Plugins only
 
