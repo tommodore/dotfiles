@@ -23,6 +23,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-jdaddy'
+
 " Colors
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'croaky/vim-colors-github'
