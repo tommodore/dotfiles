@@ -146,7 +146,7 @@ install_dotfiles
 vim +PluginInstall! +qall
 
 # Create vim backup directory
-if [ -f ~/.vimbackup ] && mkdir ~/.vimbackup
+[ -e ~/.vimbackup ] || mkdir ~/.vimbackup
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
