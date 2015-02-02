@@ -122,10 +122,3 @@ let g:loaded_syntastic_lua_luac_checker = 1
 "let g:syntastic_enable_highlighting=1
 "let g:syntastic_echo_current_error=1
 
-if &term =~ '^screen'
-    " tmux will send xterm-style keys when its xterm-keys option is on
-    execute "set <Up>=\e[1;*A"
-    execute "set <Down>=\e[1;*B"
-    execute "set <Right>=\e[1;*C"
-    execute "set <Left>=\e[1;*D"
-endif
