@@ -62,4 +62,4 @@ set -g display-time 3000
 #set-window-option -g monitor-activity on
 #set -g visual-activity on
 #setw -g automatic-rename off
-
+set -g mode-mouse on
