@@ -24,6 +24,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-jdaddy'
+Plugin 'mrtazz/simplenote.vim'
 
 " Colors
 Plugin 'altercation/vim-colors-solarized'
@@ -122,3 +123,7 @@ let g:loaded_syntastic_lua_luac_checker = 1
 "let g:syntastic_enable_highlighting=1
 "let g:syntastic_echo_current_error=1
 
+" Simplenote Credential
+if filereadable(glob("~/.simplenoterc"))
+  source ~/.simplenoterc
+endif
