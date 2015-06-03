@@ -36,7 +36,7 @@ above and see what components may mesh up with you.
 [Fork it](https://github.com/tommodore/dotfiles/fork), remove what you don't
 use, and build on what you do use.
 
-## components
+## Components
 
 There are a few special files in the hierarchy.
 
@@ -53,7 +53,7 @@ There are a few special files in the hierarchy.
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
 
-## bugs
+## Bugs
 
 I want this to work for everyone; that means when you clone it down it should
 work for you even though you may not have `rbenv` installed, for example. That
