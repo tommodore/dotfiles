@@ -12,8 +12,14 @@
   default = current
 [diff]
   memonicprefix = true
+  renames = copies
+  algorithm = patience
+[merge]
+  stat = true
+  algorithm = patience
 [branch]
   autosetuprebase = always
+  autosetupmerge = true
 [apply]
   whitespace = nowarn
 [rerere]
@@ -28,6 +34,7 @@
   br = branch
   diff = diff --word-diff
   dc = diff --cached
+  dnp = "!git --no-pager diff"
   dst = diff --stat
   dsg = diff --staged
   # Reset Commands
@@ -39,6 +46,7 @@
   rh2 = reset HEAD^^ --hard
   # Stash operations
   sl = stash list
+  sll = "!git --no-pager stash list"
   sa = stash apply
   ss = stash save
   # List commits in short form
