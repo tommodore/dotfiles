@@ -25,6 +25,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-jdaddy'
 Plugin 'mrtazz/simplenote.vim'
+Plugin 'fatih/vim-hclfmt'
 
 " Colors
 Plugin 'altercation/vim-colors-solarized'
