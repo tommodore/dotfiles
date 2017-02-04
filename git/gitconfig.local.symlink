@@ -1,6 +1,7 @@
 [difftool "diffmerge"]
 	cmd = diffmerge $LOCAL $REMOTE
 [alias]
+        br = branch
 	co = checkout
 	count = shortlog -sn
 	lc = add-rm-line-count
@@ -10,6 +11,7 @@
 	fm = fetch-merge
 	pr = open-pr
 	please = push --force-with-lease
+        st = status -s
 	commend = commit --amend --no-edit
 [color]
 	diff = auto
