@@ -1,0 +1,12 @@
+[user]
+	name = Thomas Kräuter
+	email = kraeutert@gmail.com
+[include]
+	path = /Users/tommodore/.gitconfig.local
+[dotfiles]
+	managed = true
+	lastupdate = 201702041401
+[credential]
+	helper = osxkeychain
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX

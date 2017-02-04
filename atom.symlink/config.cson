@@ -1,0 +1,39 @@
+"*":
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "metrics"
+      "exception-reporting"
+    ]
+    hideGitIgnoredFiles: true
+    projectHome: "~/Code/"
+    telemetryConsent: "no"
+    themes: [
+      "native-ui"
+      "one-dark-syntax"
+    ]
+  editor:
+    fontFamily: "Hack"
+    fontSize: 15
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "file-icons":
+    coloured: false
+    tabPaneIcon: false
+  "go-plus":
+    goPath: "~/Code/Go"
+  "go-rename": {}
+  gofmt:
+    formatTool: "goreturns"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "unity-ui":
+    showIcons: true
+  wakatime:
+    apikey: "Saved in your ~/.wakatime.cfg file"
+  "wakatime-hidden":
+    lastInit: 1486213098
+  welcome:
+    showOnStartup: false
