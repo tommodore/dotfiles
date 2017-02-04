@@ -65,3 +65,16 @@ Both:
 
 Feel free to contribute. Pull requests will be automatically
 checked/linted with [Shellcheck](https://github.com/koalaman/shellcheck).
+
+Thanks to
+---------
+
+https://github.com/carlos0/dotfiles
+
+https://github.com/holman/dotfiles
+
+https://github.com/sindresorhus/pure
+
+https://github.com/gmarik/Vundle.vim
+
+and all the plugin developers
