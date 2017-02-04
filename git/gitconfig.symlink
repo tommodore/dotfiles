@@ -5,7 +5,7 @@
 	path = /Users/tommodore/.gitconfig.local
 [dotfiles]
 	managed = true
-	lastupdate = 201702041401
+	lastupdate = 201702041532
 [credential]
 	helper = osxkeychain
 [core]

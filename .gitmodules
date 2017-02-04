@@ -1,6 +1,6 @@
-[submodule "vim/vimfiles"]
-	path = vim/vimfiles
-	url = https://github.com/tommodore/vimfiles.git
 [submodule "build"]
 	path = build
 	url = https://github.com/tommodore/shell-ci-build.git
+[submodule "vim/vimfiles"]
+	path = vim/vimfiles
+	url = https://github.com/tommodore/vimfiles
