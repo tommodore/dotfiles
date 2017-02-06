@@ -1,4 +1,4 @@
-# carlos' dotfiles
+# dotfiles
 
 [![Build Status][tb]][tp] 
 [![Powered by Antibody][ab]][ap]
