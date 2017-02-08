@@ -2,15 +2,20 @@
   sticky = True
   handle_size = 0
   focus = mouse
+  title_transmit_fg_color = "#f8f8f2"
+  title_transmit_bg_color = "#272822"
+  title_inactive_fg_color = "#f8f8f2"
+  title_inactive_bg_color = "#75715e"
 [keybindings]
 [profiles]
   [[default]]
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    palette = "#272822:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f8f8f2:#75715e:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f9f8f5"
+    foreground_color = "#f8f8f2"
+    background_color = "#272822"
+    cursor_color = "#f8f8f2"
     login_shell = True
-    background_image = None
     custom_command = /bin/zsh
     scrollback_lines = 942
-    cursor_shape = ibeam
     use_system_font = False
     use_custom_command = True
     exit_action = hold
