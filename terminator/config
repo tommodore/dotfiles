@@ -1,25 +1,26 @@
 [global_config]
-  sticky = True
   handle_size = 0
   focus = mouse
   title_transmit_fg_color = "#f8f8f2"
-  title_transmit_bg_color = "#272822"
+  sticky = True
   title_inactive_fg_color = "#f8f8f2"
+  title_transmit_bg_color = "#a6e22e"
   title_inactive_bg_color = "#75715e"
 [keybindings]
 [profiles]
   [[default]]
     palette = "#272822:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f8f8f2:#75715e:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f9f8f5"
-    foreground_color = "#f8f8f2"
-    background_color = "#272822"
-    cursor_color = "#f8f8f2"
     login_shell = True
+    background_image = None
     custom_command = /bin/zsh
     scrollback_lines = 942
     use_system_font = False
+    cursor_color = "#f8f8f2"
+    foreground_color = "#f8f8f2"
     use_custom_command = True
     exit_action = hold
     font = Hack 12
+    background_color = "#272822"
     scrollback_infinite = True
 [layouts]
   [[default]]
