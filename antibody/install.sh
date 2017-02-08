@@ -8,5 +8,3 @@ else
 fi
 
 antibody bundle < "$DOTFILES/antibody/bundles.txt" > ~/.bundles.txt
-antibody bundle sindresorhus/pure >> ~/.bundles.txt
-antibody bundle < "$DOTFILES/antibody/last_bundles.txt" >> ~/.bundles.txt
