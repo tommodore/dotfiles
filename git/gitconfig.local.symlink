@@ -1,6 +1,7 @@
 [difftool "diffmerge"]
 	cmd = diffmerge $LOCAL $REMOTE
 [alias]
+	cp = cherry-pick
         br = branch
 	co = checkout
 	count = shortlog -sn
@@ -13,6 +14,36 @@
 	please = push --force-with-lease
         st = status -s
 	commend = commit --amend --no-edit
+	unstage = reset -q HEAD --
+	discard = checkout --
+	nevermind = !git reset --hard HEAD && git clean -d -f
+	uncommit = reset --mixed HEAD~
+	save = commit -m
+	resave = commit --amend
+	invert = revert
+	last = log -1 HEAD --format=format:"%Cred%H"
+	summary = status -u -s
+	graph = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %ar) %Cred%d' --date-order
+	history = log -10 --format=format:'%Cgreen%h %Creset• %s (%cN, %ar)'
+	branchout = checkout -b
+	branches = branch -a
+	tags = tag
+	stashes = stash list
+	prestage = diff -w --word-diff=color
+	precommit = diff --cached -w --word-diff=color --word-diff-regex='[^[:space:]<>]+'
+	move = mv
+	remove = rm
+	unmerged = branch --no-merged
+	unstash = stash pop
+	what = show -w
+	untrack = rm -r --cached
+	rewrite = rebase -i
+	amend = commit --amend
+	back = checkout "-"
+	contributors = shortlog -s -n
+	filetrail = git log --follow -p -w
+	mergetrail = log --ancestry-path --merges
+
 [color]
 	diff = auto
 	status = auto
@@ -50,3 +81,16 @@
 	template = ~/.dotfiles/git/template.txt
 [log]
 	showSignature = false
+[url "git@github.com:"]
+	insteadOf = "gh:"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+	insteadOf = "github:"
+[url "git@gist.github.com:"]
+	insteadOf = "gst:"
+	pushInsteadOf = "gist:"
+	pushInsteadOf = "git://gist.github.com/"
+[url "git://gist.github.com/"]
+	insteadOf = "gist:"
+
