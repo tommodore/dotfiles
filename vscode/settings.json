@@ -12,5 +12,8 @@
   "window.reopenFolders": "none",
   "terminal.external.osxExec": "iTerm.app",
   "files.autoSave": "onFocusChange",
-  "extensions.autoUpdate": true
+  "extensions.autoUpdate": true,
+  "workbench.colorTheme": "Monokai",
+  "vim.disableAnnoyingNeovimMessage": true,
+  "workbench.iconTheme": "vscode-icons"
 }
