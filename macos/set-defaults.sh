@@ -100,6 +100,10 @@ defaults write NSGlobalDomain AppleAquaColorVariant -int 6
 echo "  › Set graphite highlight color"
 defaults write NSGlobalDomain AppleHighlightColor -string "0.847059 0.847059 0.862745"
 
+echo "  › Set Focus Follows Mouse in Terminal"
+defaults write com.apple.Terminal FocusFollowsMouse -bool true
+
+
 echo "  › Show battery percent"
 defaults write com.apple.menuextra.battery ShowPercent -bool true
 
