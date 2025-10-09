@@ -1,0 +1,83 @@
+# ~/.config/starship/starship.toml
+
+# Global
+add_newline = true
+scan_timeout = 10
+command_timeout = 500
+
+# Prompt format (left: user/dir/git, right: time + extras)
+format = """
+[$username]($username)[$directory]($directory)[$git_branch]($git_branch)[$git_status]($git_status)
+$character"""
+
+right_format = "[$cmd_duration]($cmd_duration)[$python]($python)[$time]($time) "
+
+# Catppuccin Mocha palette (subset for brevity)
+[palettes.mocha]
+accent = "#89b4fa"      # Blue for dir/user
+success = "#a6e3a1"     # Green for git branch
+warning = "#f9e2af"     # Yellow for status/duration
+error = "#f38ba8"       # Red for errors
+text = "#cdd6f4"        # Foreground text
+base = "#1e1e2e"        # Background
+
+# Username (only if root/SSH)
+[username]
+show_always = false
+style_user = "fg:accent bold"
+style_root = "fg:error bold"
+format = "[$user]($style) "
+
+# Directory (with ligature truncation)
+[directory]
+style = "fg:accent bg:base"
+truncation_length = 3
+truncate_to_repo = true
+truncation_symbol = "…/"
+
+# Git branch (ligature symbol)
+[git_branch]
+symbol = " "  # Nerd Font ligature for branch
+style = "fg:base bg:success"
+format = "[$symbol$branch]($style)"
+
+# Git status (ligature arrows)
+[git_status]
+style = "fg:base bg:warning"
+conflicted = "⚡"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕${count}"
+untracked = "?"
+stashed = "📦"
+modified = "✏️"
+staged = "+"
+renamed = "»"
+deleted = "✘"
+format = "[$all_status$ahead_behind]($style)"
+
+# Character (ligature prompt)
+[character]
+success_symbol = "[❯](bold success)"
+error_symbol = "[❯](bold error)"
+vicmd_symbol = "[❮](bold success)"  # For vi mode
+format = "$symbol "
+
+# Cmd duration (simple warning color)
+[cmd_duration]
+min_time = 2000
+style = "fg:warning"
+format = "[$duration]($style)"
+
+# Python (ligature snake + mise integration)
+[python]
+symbol = "🐍 "  # Emoji ligature
+style = "fg:accent"
+format = "[$symbol($virtualenv)]($style)"
+
+# Time (subtle text color)
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "fg:text"
+format = "[$time]($style)"
