@@ -32,7 +32,7 @@ config.window_padding = {
 config.font = wezterm.font_with_fallback({
     -- Primary: Monaspace Neon (The "Cyberpunk/GitHub" look)
     -- Requires: brew install font-monaspace-nerd-font
-    { family = "MonaspiceNe Nerd Font", weight = "Regular" },
+    { family = "MonaspiceNe NF", weight = "Regular" },
     
     -- Fallback: Your original JetBrains Mono
     { family = "JetBrainsMono Nerd Font", weight = "Regular" },
