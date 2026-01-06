@@ -4,80 +4,88 @@
 add_newline = true
 scan_timeout = 10
 command_timeout = 500
+palette = "tokyonight"
 
-# Prompt format (left: user/dir/git, right: time + extras)
+# Format: Removed confusing background transitions. Everything floats on the terminal bg.
 format = """
 [$username]($username)[$directory]($directory)[$git_branch]($git_branch)[$git_status]($git_status)
 $character"""
 
 right_format = "[$cmd_duration]($cmd_duration)[$python]($python)[$time]($time) "
 
-# Catppuccin Mocha palette (subset for brevity)
-[palettes.mocha]
-accent = "#89b4fa"      # Blue for dir/user
-success = "#a6e3a1"     # Green for git branch
-warning = "#f9e2af"     # Yellow for status/duration
-error = "#f38ba8"       # Red for errors
-text = "#cdd6f4"        # Foreground text
-base = "#1e1e2e"        # Background
+# ---------------------------------------------------------
+# 🎨 Tokyo Night Palette (Storm)
+# ---------------------------------------------------------
+[palettes.tokyonight]
+accent = "#7aa2f7"      # Blue
+success = "#9ece6a"     # Green
+warning = "#e0af68"     # Orange
+error = "#f7768e"       # Red
+text = "#a9b1d6"        # Storm FG (slightly dimmer than pure white)
+dim = "#565f89"         # Comments/Dim text
 
-# Username (only if root/SSH)
+# ---------------------------------------------------------
+# Modules
+# ---------------------------------------------------------
+
+# Username
 [username]
 show_always = false
-style_user = "fg:accent bold"
-style_root = "fg:error bold"
+style_user = "accent bold"
+style_root = "error bold"
 format = "[$user]($style) "
 
-# Directory (with ligature truncation)
+# Directory
 [directory]
-style = "fg:accent bg:base"
+style = "accent bold"
 truncation_length = 3
 truncate_to_repo = true
 truncation_symbol = "…/"
+read_only = " 🔒"
 
-# Git branch (ligature symbol)
+# Git branch
 [git_branch]
-symbol = " "  # Nerd Font ligature for branch
-style = "fg:base bg:success"
+symbol = " "
+style = "success bold"   # Green text, no background
 format = "[$symbol$branch]($style)"
 
-# Git status (ligature arrows)
+# Git status
 [git_status]
-style = "fg:base bg:warning"
+style = "warning"       # Orange text, no background
 conflicted = "⚡"
 ahead = "⇡${count}"
 behind = "⇣${count}"
 diverged = "⇕${count}"
 untracked = "?"
 stashed = "📦"
-modified = "✏️"
+modified = "!"
 staged = "+"
 renamed = "»"
 deleted = "✘"
-format = "[$all_status$ahead_behind]($style)"
+format = "([$all_status$ahead_behind]($style))"
 
-# Character (ligature prompt)
+# Character
 [character]
 success_symbol = "[❯](bold success)"
 error_symbol = "[❯](bold error)"
-vicmd_symbol = "[❮](bold success)"  # For vi mode
+vicmd_symbol = "[❮](bold success)"
 format = "$symbol "
 
-# Cmd duration (simple warning color)
+# Cmd duration
 [cmd_duration]
 min_time = 2000
-style = "fg:warning"
-format = "[$duration]($style)"
+style = "dim"  # Dimmer look for less distraction
+format = "took [$duration]($style)"
 
-# Python (ligature snake + mise integration)
+# Python
 [python]
-symbol = "🐍 "  # Emoji ligature
-style = "fg:accent"
+symbol = " "
+style = "accent"
 format = "[$symbol($virtualenv)]($style)"
 
-# Time (subtle text color)
+# Time
 [time]
 disabled = false
 time_format = "%H:%M"
-style = "fg:text"
+style = "dim"
 format = "[$time]($style)"
