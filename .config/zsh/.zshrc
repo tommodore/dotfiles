@@ -45,6 +45,13 @@ fi
 if [[ -x "$(command -v zoxide)" ]]; then
   eval "$(zoxide init --cmd cd zsh)"
 fi
+# # BEGIN FASTFETCH
+# Run Fastfetch only in interactive sessions
+if [[ $- == *i* ]] && command -v fastfetch &>/dev/null; then
+    clear
+    fastfetch
+fi
+# END FASTFETCH
 
 # Keybindings (Emacs-style, cross-platform)
 bindkey -e
