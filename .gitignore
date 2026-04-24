@@ -1,0 +1,25 @@
+# Ignore everything by default
+*
+
+# But track these folders/files we actually want
+!.config/
+!.zshenv
+!.zshrc
+!README.md
+!macos/
+!Brewfile
+!.gitignore
+
+# Ignore common junk inside .config
+.config/**/cache/
+.config/**/logs/
+.config/**/backups/
+.config/**/automatic_backups/
+.config/**/.zcompdump*
+.config/**/lazy-lock.json
+.config/**/node_modules/
+.config/**/versions.json
+.config/**/hosts.yml
+.config/**/gtkfilechooser.ini
+.config/**/btop.conf
+.config/**/htoprc
