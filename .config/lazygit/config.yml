@@ -23,22 +23,19 @@ gui:
       - "#f38ba8"
     defaultFgColor:
       - "#cdd6f4"
-
   showIcons: true
   showFileTree: true
   showRandomTip: false
   showBottomLine: true
   showPanelJumps: true
-
 git:
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
   commit:
     signOff: false
   merge:
     autoStash: true
-
 keybinding:
   universal:
     quit: q
