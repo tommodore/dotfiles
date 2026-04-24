@@ -1,0 +1,19 @@
+# Lazydocker configuration
+# Clean setup matching lazygit style
+
+gui:
+  theme:
+    activeBorderColor:
+      - "#89b4fa"
+      - bold
+    inactiveBorderColor:
+      - "#45475a"
+  showIcons: true
+  showRandomTip: false
+
+logs:
+  timestamps: true
+  since: "1h"
+
+commandTemplates:
+  dockerCompose: docker compose

@@ -1,0 +1,55 @@
+# Lazygit configuration
+# Clean & modern setup for CTO workflow
+
+gui:
+  theme:
+    lightTheme: false
+    activeBorderColor:
+      - "#89b4fa"
+      - bold
+    inactiveBorderColor:
+      - "#45475a"
+    optionsTextColor:
+      - "#89b4fa"
+    selectedLineBgColor:
+      - "#313244"
+    selectedRangeBgColor:
+      - "#313244"
+    cherryPickedCommitBgColor:
+      - "#45475a"
+    cherryPickedCommitFgColor:
+      - "#fab387"
+    unstagedChangesColor:
+      - "#f38ba8"
+    defaultFgColor:
+      - "#cdd6f4"
+
+  showIcons: true
+  showFileTree: true
+  showRandomTip: false
+  showBottomLine: true
+  showPanelJumps: true
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+  commit:
+    signOff: false
+  merge:
+    autoStash: true
+
+keybinding:
+  universal:
+    quit: q
+    quit-alt1: <c-c>
+  files:
+    commitChanges: c
+    commitChangesWithoutHook: C
+    amendLastCommit: A
+  branches:
+    checkoutBranchByName: b
+  commits:
+    viewResetOptions: g
+  stash:
+    popStash: p
