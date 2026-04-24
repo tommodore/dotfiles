@@ -1,0 +1,7 @@
+# AutoRaise config file
+pollMillis=50       # Polling frequency (ms); adjust lower (e.g., 20) for more responsiveness, but may increase CPU.
+delay=0             # Disable auto-raising on hover.
+focusDelay=1        # Immediate focus on hover (requires EXPERIMENTAL_FOCUS_FIRST compilation).
+mouseDelta=0.1      # Mouse movement sensitivity (higher = less sensitive).
+ignoreSpaceChanged=false  # Don't ignore focus after space changes (optional for AeroSpace compatibility).
+disableKey=control  # Hold Ctrl to temporarily disable FFM (optional).

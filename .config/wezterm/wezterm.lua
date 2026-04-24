@@ -16,7 +16,7 @@ config.macos_window_background_blur = 20
 -- Window Look
 -- "RESIZE" removes the native macOS title bar for a seamless look.
 -- If you miss the title bar, change this back to "TITLE|RESIZE"
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE|RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
 
 config.window_padding = {

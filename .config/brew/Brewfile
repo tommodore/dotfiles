@@ -1,0 +1,42 @@
+# Brewfile - One-command install for CTO setup
+# Run: brew bundle --file ~/.config/brew/Brewfile
+
+# --- Core Tools ---
+brew "neovim"
+brew "wezterm"
+brew "starship"
+brew "fzf"
+brew "eza"
+brew "zoxide"
+brew "bat"
+brew "delta"
+brew "mise"
+brew "lazygit"
+brew "lazydocker"
+brew "git-delta"
+brew "fastfetch"
+brew "tailscale"
+
+# --- macOS Apps (Casks) ---
+cask "raycast"
+cask "hammerspoon"
+cask "rectangle-pro"
+cask "obsidian"
+cask "bitwarden"
+cask "slack"
+cask "telegram"
+cask "signal"
+cask "whatsapp"
+cask "google-chrome"
+cask "firefox"
+cask "brave-browser"
+cask "visual-studio-code"   # fallback editor
+cask "docker"
+cask "tailscale"
+
+# --- Optional but recommended ---
+brew "ripgrep"
+brew "fd"
+brew "jq"
+brew "yq"
+brew "gh"                    # GitHub CLI

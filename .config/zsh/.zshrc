@@ -1,6 +1,5 @@
 # ~/.config/zsh/.zshrc
-# CTO-Optimized Zsh Configuration
-# Managed with gemini-cli • Bare repo + XDG
+# Clean Zsh Configuration
 
 # =============================================================================
 # ENVIRONMENT & PATH
@@ -63,6 +62,7 @@ alias ll='eza -la --icons --group-directories-first --git'
 alias la='eza -a --icons --group-directories-first'
 alias lt='eza --tree --icons --level=2'
 alias ltg='eza --tree --icons --git-ignore'
+alias ltr='eza -l --sort=modified --reverse --icons'     # like ls -ltr
 
 alias cat='bat --style=plain'
 alias less='bat --paging=always'
@@ -162,8 +162,8 @@ tsquick() {
 # FINAL TOUCHES
 # =============================================================================
 
-# Welcome message (optional - remove if you prefer clean startup)
-echo "🚀 CTO Terminal Ready • gemini-cli active"
+# System info on startup
+fastfetch
 
 # Source any local overrides
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
