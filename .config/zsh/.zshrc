@@ -118,6 +118,7 @@ alias tsup='tailscale up'
 # --- System ---
 alias reload='source ~/.config/zsh/.zshrc && echo "Zsh config reloaded"'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias brewup="brew update && brew upgrade --greedy && brew cleanup && brew doctor"
 
 # =============================================================================
 # FUNCTIONS
