@@ -97,6 +97,7 @@ alias mr='mise run'
 alias o='obsidian'                    # Quick open Obsidian (if in PATH or alias)
 alias ray='open -a Raycast'           # Launch Raycast
 alias hs='open -a Hammerspoon'        # Open Hammerspoon console
+alias doc2pdf='/Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to pdf'
 
 # --- Communication ---
 alias slack='open -a Slack'
