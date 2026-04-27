@@ -57,7 +57,6 @@ fi
 # =============================================================================
 
 # --- Navigation & Files ---
-alias ls='eza --icons --group-directories-first'
 alias ll='eza -la --icons --group-directories-first --git'
 alias la='eza -a --icons --group-directories-first'
 alias lt='eza --tree --icons --level=2'
